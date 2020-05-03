@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/nira_idle.png" type="Texture" id=1]
+[ext_resource path="res://player/nira.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 172, 240 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 240, 172, 240 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 480, 172, 240 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 24.0
+height = 152.0
+
+[node name="nira" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="sprite" type="AnimatedSprite" parent="."]
+position = Vector2( -4, -9 )
+frames = SubResource( 4 )
+animation = "idle"
+frame = 1
+playing = true
+
+[node name="shape" type="CollisionShape2D" parent="."]
+position = Vector2( -1, 0 )
+shape = SubResource( 5 )
