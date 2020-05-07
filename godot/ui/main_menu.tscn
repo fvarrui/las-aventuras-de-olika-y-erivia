@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
+[ext_resource path="res://items/background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/title.png" type="Texture" id=3]
+[ext_resource path="res://assets/play_button.png" type="Texture" id=4]
+[ext_resource path="res://assets/play_button_hover.png" type="Texture" id=5]
+[ext_resource path="res://assets/background_castles.png" type="Texture" id=6]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" parent="." instance=ExtResource( 2 )]
+offset = Vector2( 0, 100 )
+scale = Vector2( 0.6, 0.6 )
+transform = Transform2D( 0.6, 0, 0, 0.6, 0, 100 )
+speed = 0.75
+texture = ExtResource( 6 )
+
+[node name="title" type="Sprite" parent="."]
+position = Vector2( 512, 192 )
+scale = Vector2( 0.479402, 0.54091 )
+texture = ExtResource( 3 )
+
+[node name="play_button" type="TextureButton" parent="."]
+margin_left = 384.0
+margin_top = 288.0
+margin_right = 640.0
+margin_bottom = 352.0
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="play_button" to="." method="_on_play_button_pressed"]

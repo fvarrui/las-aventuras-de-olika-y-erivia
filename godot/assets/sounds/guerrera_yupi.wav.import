@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/guerrera_yupi.wav-cdec42f7c8f5ade3e2760141ef46d563.sample"
+
+[deps]
+
+source_file="res://assets/sounds/guerrera_yupi.wav"
+dest_files=[ "res://.import/guerrera_yupi.wav-cdec42f7c8f5ade3e2760141ef46d563.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
