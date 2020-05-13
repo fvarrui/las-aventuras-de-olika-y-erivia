@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://ui/main_menu.gd" type="Script" id=1]
 [ext_resource path="res://items/background.tscn" type="PackedScene" id=2]
@@ -6,13 +6,14 @@
 [ext_resource path="res://assets/play_button.png" type="Texture" id=4]
 [ext_resource path="res://assets/play_button_hover.png" type="Texture" id=5]
 [ext_resource path="res://assets/background_castles.png" type="Texture" id=6]
+[ext_resource path="res://assets/sounds/wind_song.ogg" type="AudioStream" id=7]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": true
 }
 
 [node name="background" parent="." instance=ExtResource( 2 )]
@@ -24,7 +25,7 @@ texture = ExtResource( 6 )
 
 [node name="title" type="Sprite" parent="."]
 position = Vector2( 512, 192 )
-scale = Vector2( 0.479402, 0.54091 )
+scale = Vector2( 0.761538, 0.859245 )
 texture = ExtResource( 3 )
 
 [node name="play_button" type="TextureButton" parent="."]
@@ -39,4 +40,8 @@ stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
 [connection signal="pressed" from="play_button" to="." method="_on_play_button_pressed"]

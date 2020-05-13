@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/sun.png" type="Texture" id=1]
+[ext_resource path="res://items/sun.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 128, 124 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 248, 128, 124 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 372, 128, 124 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 128, 124 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 15.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": false,
+"name": "blink",
+"speed": 5.0
+} ]
+
+[node name="sun" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.516129, 0.516129 )
+frames = SubResource( 4 )
+playing = true
+
+[node name="timer" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+autostart = true
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]

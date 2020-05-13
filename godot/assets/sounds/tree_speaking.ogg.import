@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tree_speaking.ogg-0e5ed65eadc44543bbc2f5696b9a6b20.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/tree_speaking.ogg"
+dest_files=[ "res://.import/tree_speaking.ogg-0e5ed65eadc44543bbc2f5696b9a6b20.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
