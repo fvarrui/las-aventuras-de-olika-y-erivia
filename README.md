@@ -4,7 +4,7 @@ Juego de plataformas creado con [Godot Engine](https://godotengine.org/).
 
 ![Screenshot](docs/screenshot.png)
 
-Controles:
+## Controles:
 
 - Gamepad
 - Teclado: 
