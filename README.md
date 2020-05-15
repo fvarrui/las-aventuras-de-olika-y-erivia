@@ -1,4 +1,4 @@
-# Los mundos de Oliva y Erivia
+# Las aventuras de Oliva y Erivia
 
 Juego de plataformas creado con Godot Engine.
 
