@@ -47,7 +47,7 @@ func _physics_process(delta):
 			$sounds/steps.stop()
 			motion.x = 0
 			
-	print(is_on_floor())
+	# print(is_on_floor())
 
 	move_and_slide(motion, UP)
 
