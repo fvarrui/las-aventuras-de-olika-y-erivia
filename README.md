@@ -1,14 +1,23 @@
-# Las aventuras de Olika y Erivia
+# Olika and Erivia Adventures
 
-Juego de plataformas creado con [Godot Engine](https://godotengine.org/).
+Platformer developed in [Godot Engine](https://godotengine.org/).
 
 ![Screenshot](docs/screenshot.png)
 
-## Controles:
+## Controls
 
-- Gamepad
-- Teclado: 
-  - Movimiento: **Cursores**.
-  - Saltar: **Espacio**.
-  - Pantalla completa: **F**.
-  - Salir: **ESC**.
+### Gamepad
+
+- PS4 Dualshock:
+  - Movement: **Left gear** 
+  - Jump: **X**
+
+### Keyboard
+
+- Movement: **Cursors/Arrows**.
+- Jump: **Space**.
+- Fullscreen: **F**.
+- Quit: **ESC**.
+
+### Touchscreen
+- On screen controls
