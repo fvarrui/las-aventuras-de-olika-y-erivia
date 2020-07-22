@@ -1,6 +1,6 @@
 # Olika and Erivia Adventures
 
-Platformer developed in [Godot Engine](https://godotengine.org/).
+Platform game developed in [Godot Engine](https://godotengine.org/) based on a story written and drawn by my children.
 
 ![Screenshot](docs/screenshot.png)
 
