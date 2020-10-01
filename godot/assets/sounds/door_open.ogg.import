@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/door_open.ogg-91fb81f29a8112d837aa6885054566d2.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/door_open.ogg"
+dest_files=[ "res://.import/door_open.ogg-91fb81f29a8112d837aa6885054566d2.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
